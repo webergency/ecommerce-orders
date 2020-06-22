@@ -1,0 +1,35 @@
+{
+  "name": "@webergency/orders",
+  "description": "Orders Service",
+  "version": "0.0.1",
+  "author": "radixxko",
+  "license": "MIT",
+  "main": "lib/orders.js",
+  "files": [
+    "lib/"
+  ],
+  "scripts": {
+    "test": "nyc mocha",
+    "coverage": "nyc report --reporter=text-lcov | coveralls"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/webergency/orders.git"
+  },
+  "keywords": [
+    "orders",
+    "webergency"
+  ],
+  "dependencies": {
+    "@liqd-js/alg-object-merge": "^1.0.0",
+    "@liqd-js/client": "0.0.3",
+    "@liqd-js/flow": "^1.4.0",
+    "@liqd-js/server": "0.0.2",
+    "liqd-string": "^1.0.5"
+  },
+  "devDependencies": {
+    "coveralls": "^3.0.5",
+    "mocha": "^5.0.4",
+    "nyc": "^14.1.1"
+  }
+}
